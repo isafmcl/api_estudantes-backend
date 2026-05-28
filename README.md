@@ -14,7 +14,7 @@ Backend REST para monitoramento de burnout acadêmico. Esta API foi construída 
 
 ---
 
-## 📁 Estrutura principal
+##  Estrutura principal
 
 ```
 src/
@@ -26,7 +26,7 @@ src/
 
 ---
 
-## 🚀 Como rodar localmente
+##  Como rodar localmente
 
 ### Pré-requisitos
 
@@ -71,7 +71,7 @@ A API ficará disponível em `http://localhost:3000` e a documentação em `http
 
 ---
 
-## 🐳 Rodando com Docker
+##  Rodando com Docker
 
 ### Usando Docker
 
@@ -90,7 +90,7 @@ docker compose up --build
 
 ---
 
-## ☁️ Implantação em servidor
+##  Implantação em servidor
 
 ### Opção 1 — Servidor Linux com Docker
 
@@ -122,7 +122,7 @@ uvicorn src.main:app --host 0.0.0.0 --port 3000
 
 ---
 
-## 🔧 Configuração de ambiente
+## Configuração de ambiente
 
 O `.env.example` já informa todas as variáveis necessárias.
 
@@ -135,7 +135,7 @@ O `.env.example` já informa todas as variáveis necessárias.
 
 ---
 
-## 📌 Endpoints principais
+## Endpoints principais
 
 ### Autenticação
 - `POST /api/auth/register` — cadastro de usuário
@@ -160,7 +160,7 @@ O `.env.example` já informa todas as variáveis necessárias.
 
 ---
 
-## ✅ Testes
+## Testes
 
 ```bash
 pip install -r requirements-dev.txt
@@ -169,7 +169,7 @@ pytest tests/ -v
 
 ---
 
-## 📌 Notas importantes
+## Notas importantes
 
 - A aplicação usa `Settings.from_env()` para ler variáveis de ambiente.
 - Se `JWT_SECRET` não existir, a aplicação não inicia.
@@ -177,7 +177,7 @@ pytest tests/ -v
 
 ---
 
-## 🌟 Arquitetura e qualidade
+## Arquitetura e qualidade
 
 - Camada de domínio isolada em `src/domain`
 - Casos de uso em `src/application`
@@ -185,9 +185,3 @@ pytest tests/ -v
 - Aplicação pronta para rodar localmente e em servidor via Docker
 
 ---
-
-## 🛠️ Arquivos adicionados
-
-- `Dockerfile` — build da imagem da API
-- `docker-compose.yml` — execução em contêiner com `.env`
-- `.dockerignore` — evita arquivos não necessários na imagem
